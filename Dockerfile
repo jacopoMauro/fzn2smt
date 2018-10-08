@@ -16,5 +16,5 @@ RUN apt-get update && \
   cd fzn2smt && \
   wget http://central.maven.org/maven2/org/antlr/antlr-runtime/3.2/antlr-runtime-3.2.jar
 	
-ENV CLASSPATH=/tool/fzn2smt:/tool/fzn2smt/antlr-runtime-3.2.jar:$CLASSPATH
+ENV CLASSPATH "$CLASSPATH:/tool/fzn2smt:/tool/fzn2smt/antlr-runtime-3.2.jar"
 
